@@ -8,7 +8,9 @@ sudo: required
 go_import_path: github.com/ling7334/recover
 
 install:
-  - go get -t ./...
+  - export GOPATH=$HOME/gopath/src/github.com/ling7334/recover
+  - export PATH=$PATH:$HOME/gopath/src/github.com/ling7334/recover/bin
+  - go get -v github.com/ling7334/recover
  
 script:
   - go test -v ./...
