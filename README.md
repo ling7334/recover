@@ -3,7 +3,7 @@
 
 recover form panic, convert Panicking information to error, and pass to next level. Prevent panic crash the program.
 
-## Useage
+## Usage
 ```golang
   package main
 
